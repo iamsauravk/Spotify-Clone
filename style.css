@@ -1,0 +1,462 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.flex-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+/* Sidebar */
+
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+}
+
+.navigation {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.7rem;
+}
+
+.nav-option {
+    line-height: 40px;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.2rem;
+    font-weight: 100;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.lib-chip {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+}
+
+.chip {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.6rem;
+    background-color: #232323;
+    border-radius: 5rem;
+    width: fit-content;
+    font-size: 0.71rem;
+    font-weight: 480;
+    color: white;
+    opacity: 0.87;
+    cursor: pointer;
+}
+
+.chip:hover {
+    opacity: 1;
+}
+
+.mini-bar {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.mini-bar:hover {
+    opacity: 1;
+}
+
+.album {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: -0.5rem;
+}
+
+.album:hover {
+    background-color: #1a1a1a;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.playlists {
+    margin-top: -0.5rem;
+}
+
+.album-cover {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.2rem;
+    margin-left: 0.3rem;
+}
+
+.album-descr {
+    margin: 0;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.about {
+    opacity: 0.8;
+}
+
+.album-name {
+    color: white;
+    margin-bottom: 0.35rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Content */
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: scroll;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 20;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.904);
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.sticky-nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticky-nav-icons img{
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-options button {
+    margin-right: 1rem;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.dark {
+    background: #000;
+    color: white;
+}
+
+.user {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+
+.slip {
+    display: flex;
+    background-color: #202020;
+    align-items: center;
+    height: 78px;
+    width: 481px;
+    border-radius: 0.5rem;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+.slip:hover {
+    background-color: #3f3e3e;
+    transition: 0.5s;
+}
+
+.slip-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.slip img {
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.slip-title {
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.card {
+    background-color: #1a1919;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-descr {
+    font-size: 0.78rem;
+    opacity: 0.7;
+}
+
+.card:hover {
+    background-color: #272727;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: 0.2;
+}
+
+/* Player */
+
+.music-player {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.player-album {
+    width: 25%;
+}
+
+.play-album {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: -0.5rem;
+}
+
+.play-descr {
+    font-weight: normal;
+    font-size: 0.62rem;
+}
+
+.heart {
+    opacity: 0.62;
+}
+
+.play-name {
+    white-space: nowrap;
+    color: white;
+    margin-bottom: -0.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.player {
+    width: 50%;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin-right: 2rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 0.7rem;
+    opacity: 0.7;
+}
+
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.controls {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.controls i {
+    padding-right: 1rem;
+    opacity: 0.62;
+    font-size: 0.9rem;
+}
+
+.controls i:hover {
+    opacity: 1;
+}
+
+.vol {
+    appearance: none;
+    width: 5.5rem;
+    margin-left: -0.6rem;
+    margin-right: 1rem;
+}
+
+.vol::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.vol::-webkit-slider-thumb {
+    appearance: none;
+    
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
